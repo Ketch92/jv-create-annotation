@@ -5,7 +5,7 @@ import core.basesyntax.storage.Storage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BetDao implements Dao<Bet>{
+public class BetDao implements Dao<Bet> {
     @Override
     public void add(Bet value) {
         Storage.betsStorage.add(value);
