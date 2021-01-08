@@ -32,7 +32,7 @@ public class User {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof User)) {
+        if (!(o.getClass().equals(User.class))) {
             return false;
         }
         User user = (User) o;

@@ -32,7 +32,7 @@ public class Bet {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof Bet)) {
+        if (!(o.getClass().equals(Bet.class))) {
             return false;
         }
         Bet bet1 = (Bet) o;
