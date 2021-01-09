@@ -3,6 +3,7 @@ package core.basesyntax.lib;
 import core.basesyntax.dao.Dao;
 import core.basesyntax.factory.Factory;
 import core.basesyntax.model.IllegalDaoType;
+import core.basesyntax.model.User;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -29,9 +30,8 @@ public class Injector {
     }
     
     private static Dao<?> getDao(Type type) {
-        String simpleType = "model.User";
         Dao<?> dao;
-        if (type.getTypeName().contains(simpleType)) {
+        if (type.getTypeName().contains(User.class.getTypeName())) {
             dao = Factory.getUserDao();
             if (dao.getClass().getAnnotation(DaoAnnotation.class) != null) {
                 return dao;
