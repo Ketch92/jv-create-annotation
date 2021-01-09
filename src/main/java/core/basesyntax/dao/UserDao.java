@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDao implements Dao<User> {
+    
     @Override
     public void add(User value) {
         Storage.userStorage.add(value);
