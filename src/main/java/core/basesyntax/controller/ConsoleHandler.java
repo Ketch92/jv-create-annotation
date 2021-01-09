@@ -15,6 +15,7 @@ public class ConsoleHandler {
     
     public void handle() {
         Scanner console = new Scanner(System.in);
+        
         while (true) {
             String command = console.nextLine();
             if (command.equalsIgnoreCase(EXIT)) {
