@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Thanks for coop");
         System.out.println("Good luck!");
     
-        System.out.println(Factory.getUserDao().getAll());
-        System.out.println(Factory.getBetDao().getAll());
+        Factory.getUserDao().getAll().forEach(System.out::println);
+        Factory.getBetDao().getAll().forEach(System.out::println);
     }
 }
