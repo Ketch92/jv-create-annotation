@@ -1,10 +1,12 @@
 package core.basesyntax.dao;
 
+import core.basesyntax.lib.DaoAnnotation;
 import core.basesyntax.model.User;
 import core.basesyntax.storage.Storage;
 import java.util.ArrayList;
 import java.util.List;
 
+@DaoAnnotation
 public class UserDao implements Dao<User> {
     
     @Override
