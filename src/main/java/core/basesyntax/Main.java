@@ -22,6 +22,5 @@ public class Main {
     
         Factory.getUserDao().getAll().forEach(System.out::println);
         Factory.getBetDao().getAll().forEach(System.out::println);
-        
     }
 }
