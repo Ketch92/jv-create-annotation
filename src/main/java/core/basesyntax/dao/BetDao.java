@@ -1,10 +1,12 @@
 package core.basesyntax.dao;
 
+import core.basesyntax.lib.DaoAnnotation;
 import core.basesyntax.model.Bet;
 import core.basesyntax.storage.Storage;
 import java.util.ArrayList;
 import java.util.List;
 
+@DaoAnnotation
 public class BetDao implements Dao<Bet> {
     @Override
     public void add(Bet value) {
