@@ -1,11 +1,13 @@
 package core.basesyntax.dao;
 
+import core.basesyntax.lib.Dao;
 import core.basesyntax.model.Bet;
 import core.basesyntax.storage.Storage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BetDao implements Dao<Bet> {
+@Dao
+public class BetDao implements BetDaoIntf {
     @Override
     public void add(Bet value) {
         Storage.betsStorage.add(value);
