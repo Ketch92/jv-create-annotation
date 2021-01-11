@@ -1,7 +1,7 @@
 package core.basesyntax.controller;
 
-import core.basesyntax.dao.BetDaoIntf;
-import core.basesyntax.dao.UserDaoIntf;
+import core.basesyntax.dao.BetDao;
+import core.basesyntax.dao.UserDao;
 import core.basesyntax.lib.Inject;
 import core.basesyntax.model.Bet;
 import core.basesyntax.model.User;
@@ -11,9 +11,9 @@ public class ConsoleHandler {
     private static final String EXIT = "Exit";
     private static final String DELIMITER = " ";
     @Inject
-    private BetDaoIntf betDao;
+    private BetDao betDao;
     @Inject
-    private UserDaoIntf userDao;
+    private UserDao userDao;
     
     public void handle() {
         Scanner console = new Scanner(System.in);

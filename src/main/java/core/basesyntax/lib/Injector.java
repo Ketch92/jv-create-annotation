@@ -40,6 +40,7 @@ public class Injector {
         if (dao.getClass().getAnnotation(Dao.class) != null) {
             return dao;
         }
-        throw new IllegalDaoType("No correct Dao implementation found");
+        throw new IllegalDaoType("No correct Dao implementation found "
+                                 + type.getTypeName());
     }
 }

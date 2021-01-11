@@ -1,25 +1,25 @@
 package core.basesyntax.factory;
 
-import core.basesyntax.dao.BetDao;
+import core.basesyntax.dao.BetDaoImpl;
 import core.basesyntax.dao.Dao;
-import core.basesyntax.dao.UserDao;
+import core.basesyntax.dao.UserDaoImpl;
 import core.basesyntax.model.Bet;
 import core.basesyntax.model.User;
 
 public class Factory {
-    private static BetDao betDao;
-    private static UserDao userDao;
+    private static BetDaoImpl betDao;
+    private static UserDaoImpl userDao;
     
     public static Dao<Bet> getBetDao() {
         if (betDao == null) {
-            betDao = new BetDao();
+            betDao = new BetDaoImpl();
         }
         return betDao;
     }
     
     public static Dao<User> getUserDao() {
         if (userDao == null) {
-            userDao = new UserDao();
+            userDao = new UserDaoImpl();
         }
         return userDao;
     }
