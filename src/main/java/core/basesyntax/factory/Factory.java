@@ -7,8 +7,8 @@ import core.basesyntax.model.Bet;
 import core.basesyntax.model.User;
 
 public class Factory {
-    public static BetDao betDao;
-    public static UserDao userDao;
+    private static BetDao betDao;
+    private static UserDao userDao;
     
     public static Dao<Bet> getBetDao() {
         if (betDao == null) {
