@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Dao
-public class UserDao implements core.basesyntax.dao.Dao<User> {
+public class UserDao implements UserDaoIntf {
     
     @Override
     public void add(User value) {

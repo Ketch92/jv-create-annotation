@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Dao
-public class BetDao implements core.basesyntax.dao.Dao<Bet> {
+public class BetDao implements BetDaoIntf {
     @Override
     public void add(Bet value) {
         Storage.betsStorage.add(value);
